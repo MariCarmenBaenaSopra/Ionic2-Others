@@ -1,0 +1,41 @@
+page-contact-detail {
+  ion-note {
+    color: color($colors, primary) !important;
+    font-size: 1.4rem !important;
+  }
+
+  img{
+    position: fixed;
+    left: 50%;
+  }
+
+  .card-title{
+    position: fixed;
+    left: 32%;
+    top: 128px;
+  }
+
+  .style-finally{
+    position: fixed;
+    bottom: 60px;
+    right: 9px;
+  }
+
+  .style-list {
+    margin-top: 127px;
+    margin-bottom: 49px;
+  }
+
+  .item-ios.item-block .item-inner {
+    padding-right: 0px;
+    border-bottom: 0px solid;
+  }
+
+  .background-style {
+    background-image: url('http://images.linnlive.com/67b8e958eb566563e3cdda6f7fcbabcd/606d2d37-5e7e-4bfb-851e-1a053c6f2120.jpg');
+    // background: url('../../img/getstart.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.7;
+  }
+}

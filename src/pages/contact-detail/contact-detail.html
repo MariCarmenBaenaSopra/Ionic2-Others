@@ -1,0 +1,51 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Contact Detaill</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="background-style">
+  <!--<ion-card *ngIf="person.id">-->
+        <img src="{{person.picture.thumbnail}}" class="style-img"/>
+        <ion-card-content class="style-text">
+            <h2 text-capitalize class="card-title">{{person.name.title}}. {{person.name.first}} {{person.name.last}}</h2>
+        </ion-card-content>
+
+        <ion-list class="style-list">
+            <ion-item>
+                <ion-icon item-left name="ios-home"></ion-icon>
+                <!--<h3>Street</h3>-->
+                <ion-note item-right>{{person.location.street}}, {{person.location.city}} {{person.location.state}} </ion-note>
+            </ion-item>
+            <ion-item>
+                <ion-icon item-left name="ios-mail"></ion-icon>
+                <!--<h3 style="margin-top: 0.7rem;">Email</h3>-->
+                <ion-note item-right>{{person.email}}</ion-note>
+            </ion-item>
+            <ion-item>
+                <ion-icon item-left name="leaf"></ion-icon>
+                <!--<h3>Salt</h3>-->
+                <ion-note item-right>{{person.login.salt}}</ion-note>
+            </ion-item>
+            <ion-item>
+                <ion-icon item-left name="pricetag"></ion-icon>
+                <!--<h3>UserName</h3>-->
+                <ion-note item-right>{{person.login.username}}</ion-note>
+            </ion-item>
+        </ion-list>
+                  
+
+        <ion-item class="style-finally">
+            <button ion-button icon-left (click)="favorite(person)" clear item-left>
+                <ion-icon name="star"></ion-icon>
+                Favorite
+            </button>
+            <button ion-button icon-left (click)="share(person)" clear item-right>
+                <ion-icon name="share"></ion-icon>
+                Share
+            </button>
+        </ion-item>
+
+</ion-content>

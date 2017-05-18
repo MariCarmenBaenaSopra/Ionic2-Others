@@ -1,0 +1,40 @@
+page-contacts {
+  .style-contact {
+    margin-top: 10px;
+    padding-top: 24px;
+  }
+
+  /*.style-search{
+    width: 16em;
+    margin-left: -25px;
+  }
+*/
+  /*.style-text {
+    margin-left: -9em;
+  }*/
+
+  .searchbar-ios.searchbar-left-aligned .searchbar-search-icon {
+    margin-left: 151px;
+  }
+
+  .list-ios .item-block .item-inner {
+    border-bottom: 0px solid;
+  }
+
+  .list-ios > .item-block:first-child {
+    border-top: 0px solid;
+  }
+
+  item:hover {
+      background-color: #fff;
+	border-bottom: 1px solid #ccc;
+  }
+
+  .background-style {
+    background-image: url('http://images.linnlive.com/67b8e958eb566563e3cdda6f7fcbabcd/606d2d37-5e7e-4bfb-851e-1a053c6f2120.jpg');
+    // background: url('../../img/getstart.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.7;
+  }
+}
